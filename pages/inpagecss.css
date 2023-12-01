@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: monospace;
+    background: white;
+    color: #00a388;
+    margin: 0;
+    /* height: 94vh; */
+    text-align: center;
+  }
+  
+  nav {
+    position: relative;
+    background: white;
+    font-weight: 400;
+    font-size: 0;
+    display: flex;
+    padding: 0;
+    width: 80%;
+  }
+  
+  nav .item {
+    font-size:20px;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+    z-index: 5;
+    min-width: 25%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0,163,136,255);
+  }
+
+  .underline {
+    height: 6px;
+    background: rgba(0,163,136,255);
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+    transition: 0.35s;
+  }
+  .bggrean{
+    background-color: rgba(0,163,136);
+  }
+  .homebutton{
+    float: right;
+    margin: 2px;
+    margin-top: 10px;
+  }
+  .sections{
+    overflow-x: hidden;
+  }
+  nav .item:hover > .dropdown > div {
+    transform: translate(0);
+  }
+  
+  nav .item:nth-child(1):hover ~ .underline {
+    transform: translate(0, 0);
+  }
+  
+  nav .item:nth-child(2):hover ~ .underline {
+    transform: translate(100%, 0);
+  }
+  
+  nav .item:nth-child(3):hover ~ .underline {
+    transform: translate(200%, 0);
+  }
+  
+  nav .item:nth-child(4):hover ~ .underline {
+    transform: translate(300%, 0);
+  }
+  footer{
+    background-color: rgba(0,163,136,255);
+  }
+  .b:hover{
+    transform: scale(1.1);
+  }
+  @media screen  and (max-width: 800px){
+
+    nav .item:nth-child(1):hover ~ .underline {
+      transform: translate(0, 0);
+    }
+
+    nav .item:nth-child(2):hover ~ .underline {
+      transform: translate(150%, 0);
+    }
+    
+    nav .item:nth-child(3):hover ~ .underline {
+      transform: translate(250%, 0);
+    }
+    
+    nav .item:nth-child(4):hover ~ .underline {
+      transform: translate(500%, 0);
+  }
+  }
+  @media screen  and (max-width: 500px){
+    nav .item:nth-child(1):hover ~ .underline {
+      transform: translate(0, 0);
+    }
+
+    nav .item:nth-child(2):hover ~ .underline {
+      transform: translate(207%, 0);
+    }
+    
+    nav .item:nth-child(3):hover ~ .underline {
+      transform: translate(308%, 0);
+    }
+    
+    nav .item:nth-child(4):hover ~ .underline {
+      transform: translate(500%, 0);
+  }
+  }
