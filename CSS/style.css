@@ -633,3 +633,48 @@ nav ul li ul li {
     width: 90%;
   }
 }
+
+
+
+
+/* Updated responsive styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    height: auto;
+    position: relative;
+  }
+
+  .navbar li {
+    position: relative;
+  }
+
+  .dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1; /* Ensure the dropdown is on top of other elements */
+  }
+
+  .navbar li:hover > .dropdown-menu,
+  .dropdown:hover > .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dropdown-menu ul {
+    display: none;
+  }
+
+  .dropdown-menu ul li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .notecard {
+    margin: 10px;
+  }
+}
+

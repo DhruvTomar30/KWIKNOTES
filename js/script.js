@@ -147,3 +147,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all dropdown toggles
+    var dropdownToggles = document.querySelectorAll('.navbar .nav-item.dropdown .nav-link');
+
+    // Add click event listeners to each dropdown toggle
+    dropdownToggles.forEach(function (toggle) {
+        toggle.addEventListener('click', function () {
+            // Close all other dropdowns
+            closeOtherDropdowns(this);
+        });
+    });
+
+    // Close other dropdowns except the one that was clicked
+    function closeOtherDropdowns(clickedToggle) {
+        dropdownToggles.forEach(function (toggle) {
+            if (toggle !== clickedToggle) {
+                toggle.parentElement.classList.remove('show');
+            }
+        });
+    }
+
+    // Close dropdowns on document click
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.nav-item.dropdown')) {
+            closeOtherDropdowns();
+        }
+    });
+});
+
+
+
