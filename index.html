@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>KWIKNOTES</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="CSS/style.css">
-  <title>KWIKNOTES</title>
-</head>
-
-<body>
-  
-  <nav class="navbar navbar-expand-lg navbar-light sticky-md-top sticky-lg-top sticky-sm-top sticky-top bg-white" >
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-md-top sticky-lg-top sticky-sm-top sticky-top bg-white" >
     <div class="container-fluid">
       <img src="./assets\navlogo.png" height="60px">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -78,260 +83,508 @@
         </ul>
       </div>
     </div>
-  </nav> 
-<br>
-  <!-- intro -->
-  <div class="intro mx-0" id="home">
-    <div class="vh-60">
-      <p class="display-3 green fw-bold text-center pt-3">YOUR STUDY BUDDY, <br />ALWAYS READY </p>
-
-      <!-- Search bar -->
-      <div id="home" class="wrapper">
-        <div class="search-input">
-          <a href="" target="_blank" hidden></a>
-          <input type="text" placeholder="Search any subject..">
-          <div class="autocom-box">
-            <!-- here list are inserted from javascript -->
+  </nav>  -->
+    <!-- try nav -->
+    <head>
+      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <header>
+        <div class="container">
+          <input type="checkbox" name="check" id="check">
+          <div class="logo-container">
+            <img src="./assets\whitenavlogo.png" height="60px">
+            <!-- <h3 class="logo">Kwik<span>Notes</span></h3> -->
           </div>
-          <div class="icon"><i class="fas fa-search"></i></div>
-
-        </div>
-        <!-- <p>Learning is a journey, and questions are the milestones. Ask, explore, and grow.</p> -->
-      </div>
-
-      <!-- Display search results here -->
-      <div class="search-results">
-        <!-- Search not found message -->
-        <div class="search-not-found">Search not found</div>
-      </div>
-
-
-      <br>
-      <div class="row" id="about"><br>
-        <div class="col-md-1"></div>
-        <div class="col-md-4 ">
-          <img src="./assets\navlogo.png" class=" mx-auto logostar" height="250px"><br>
-          <span class="text-center bggreen text-white align-content-center p-1 mx-auto logostar">CHALLENGING THE SCATTERED
-            HUNT</span><br><br>
-        </div>
-        <div class="col-md-6 align-middle">
-          <p class="display-4 abhead fw-bold green p-2">ABOUT KWIKNOTES</p>
-          <p class="lead p-2">Welcome to KwikNotes, your trusted companion on your academic journey. We take pride in offering a rich and well-organized repository of educational content tailored to support students in their pursuit of knowledge. Our user-friendly interface simplifies the process of accessing study materials, receiving vital notifications, and retrieving past question papers. At KwikNotes, our commitment is to be your one-stop solution for all your academic needs. Join us in your quest for knowledge and success.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-  <!-- about -->
-  <!-- notes cards -->
-  <br>
-  <div class="" id="impnotes">
-    <h2 class="text-center display-2 py-5 green fw-bold space-area">IMPORTANT NOTES</h2>
-    <!-- 1 -->
-    <div class="row justify-content-center" id="importantNotesCards">
-      <div id="cg" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss h-100">
-            <img src="./assets/cg.png" height="70rem">
-            <a class="subname px-3 lead fw-bold green" href="../pages/cgpage.html" data-card="cg">Computer Graphics</a>
-      </div>
-      
-      <div id="cn" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/cn.jpg" height="70rem">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/cnpage.html" data-card="cn">Computer
-          Networks
-        </a>
-      </div>
-      <div id="dbms" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/dbms.jpg" height="70rem">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/dbmspage.html" data-card="dbms">DBMS</a>
-
-      </div>
-      <div id="it" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/infotech.avif" height="70rem">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/itpage.html" data-card="it">Information
-          Technology
-        </a>
-      </div>
-      <div id="spm" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/spmlogo.jpeg" height="70rem" width="100px">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/spmpage.html" data-card="spm">SOFTWARE PROJECT MANAGEMENT 
-        </a>
-      </div>
-      <div id="py" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/py.png" height="70rem" width="100px">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/pypage.html" data-card="python">Python
-        </a>
-      </div>
-      <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/webd.jpg" height="70rem" width="100px">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/webpage.html" data-card="webD">Web
-          Development
-        </a>
-      </div>
-      <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/cloud.png" height="70rem" width="100px">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/cloudpage.html" data-card="cloud">Cloud Computing
-        </a>
-      </div>
-      <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-        <img src="./assets/ai.jpg" height="70rem" width="100px">
-        <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/aipage.html" data-card="ai">Artificial Intelligence
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- counter -->
-  <div class="count-area" data-diff="100">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6 col-md-3">
-          <div class="count-area-content">
-            <div class="count-icon"> <i class="fa fa-home"></i></div>
-            <div class="count-digit">100</div>
-            <div class="count-title"> Visitors </div>
+    
+          <div class="nav-btn">
+            <div class="nav-links">
+              <ul>
+                <li class="nav-link" style="--i: .6s">
+                  <a href="#">Home</a>
+                </li>
+                <li class="nav-link" style="--i: .85s">
+                  <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">Link 1</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Link 2</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Link 4</a>
+                      </li>
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-link" style="--i: 1.1s">
+                  <a href="#">Services<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="#">Link 1</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Link 2</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="#">Link 4</a>
+                      </li>
+                      <div class="arrow"></div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-link" style="--i: 1.35s">
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="log-sign" style="--i: 1.8s">
+              <a href="#" class="btn transparent">Log in</a>
+              <a href="#" class="btn solid">Sign up</a>
+            </div>
+          </div>
+    
+          <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+              <div></div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="count-area-content">
-            <div class="count-icon"> <i class="fa fa-graduation-cap"></i></div>
-            <div class="count-digit count-plus">10</div>
-            <div class="count-title">Subjects</div>
+      </header>
+      <main>
+      </main>
+    </body>
+    <br /><br /><br />
+    <!-- intro -->
+    <div class="intro mx-0" id="home">
+      <div class="vh-60">
+        <p class="display-3 green fw-bold text-center pt-3">
+          YOUR STUDY BUDDY, <br />ALWAYS READY
+        </p>
+
+        <!-- Search bar -->
+        <div id="home" class="wrapper">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Search any subject.." />
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
           </div>
+          <!-- <p>Learning is a journey, and questions are the milestones. Ask, explore, and grow.</p> -->
         </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="count-area-content">
-            <div class="count-icon"> <i class="fa fa-user"></i></div>
-            <div class="count-digit">4</div>
-            <div class="count-title"> Contributors </div>
+
+        <!-- Display search results here -->
+        <div class="search-results">
+          <!-- Search not found message -->
+          <div class="search-not-found">Search not found</div>
+        </div>
+
+        <br />
+        <div class="row" id="about">
+          <br />
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <img
+              src="./assets\navlogo.png"
+              class="mx-auto logostar"
+              height="250px"
+            /><br />
+            <span
+              class="text-center bggreen text-white align-content-center p-1 mx-auto logostar"
+              >CHALLENGING THE SCATTERED HUNT</span
+            ><br /><br />
           </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-          <div class="count-area-content">
-            <div class="count-icon"> <i class="fa fa-book"></i></div>
-            <div class="count-digit">90</div>
-            <div class="count-title"> Topics </div>
+          <div class="col-md-6 align-middle">
+            <p class="display-4 abhead fw-bold green p-2">ABOUT KWIKNOTES</p>
+            <p class="lead p-2">
+              Welcome to KwikNotes, your trusted companion on your academic
+              journey. We take pride in offering a rich and well-organized
+              repository of educational content tailored to support students in
+              their pursuit of knowledge. Our user-friendly interface simplifies
+              the process of accessing study materials, receiving vital
+              notifications, and retrieving past question papers. At KwikNotes,
+              our commitment is to be your one-stop solution for all your
+              academic needs. Join us in your quest for knowledge and success.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- important ques -->
-  <h2 id="pyq" class="text-center display-2 py-5 green fw-bold space-area">IMPORTANT PYQS</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/cnpyq.pdf"  target="_blank">Computer Networks
-      </a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <!-- about -->
+    <!-- notes cards -->
+    <br />
+    <div class="" id="impnotes">
+      <h2 class="text-center display-2 py-5 green fw-bold space-area">
+        IMPORTANT NOTES
+      </h2>
+      <!-- 1 -->
+      <div class="row justify-content-center" id="importantNotesCards">
+        <div
+          id="cg"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss h-100"
+        >
+          <img src="./assets/cg.png" height="70rem" />
+          <a
+            class="subname px-3 lead fw-bold green"
+            href="../pages/cgpage.html"
+            data-card="cg"
+            >Computer Graphics</a
+          >
+        </div>
+
+        <div
+          id="cn"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/cn.jpg" height="70rem" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/cnpage.html"
+            data-card="cn"
+            >Computer Networks
+          </a>
+        </div>
+        <div
+          id="dbms"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/dbms.jpg" height="70rem" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/dbmspage.html"
+            data-card="dbms"
+            >DBMS</a
+          >
+        </div>
+        <div
+          id="it"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/infotech.avif" height="70rem" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/itpage.html"
+            data-card="it"
+            >Information Technology
+          </a>
+        </div>
+        <div
+          id="spm"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/spmlogo.jpeg" height="70rem" width="100px" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/spmpage.html"
+            data-card="spm"
+            >SOFTWARE PROJECT MANAGEMENT
+          </a>
+        </div>
+        <div
+          id="py"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/py.png" height="70rem" width="100px" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/pypage.html"
+            data-card="python"
+            >Python
+          </a>
+        </div>
+        <div
+          id="web"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/webd.jpg" height="70rem" width="100px" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/webpage.html"
+            data-card="webD"
+            >Web Development
+          </a>
+        </div>
+        <div
+          id="web"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/cloud.png" height="70rem" width="100px" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/cloudpage.html"
+            data-card="cloud"
+            >Cloud Computing
+          </a>
+        </div>
+        <div
+          id="web"
+          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+        >
+          <img src="./assets/ai.jpg" height="70rem" width="100px" />
+          <a
+            class="subname align-self-center px-3 lead fw-bold green"
+            href="../pages/aipage.html"
+            data-card="ai"
+            >Artificial Intelligence
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/coapyq.pdf"  target="_blank">Computer Organization and Architecture
-      </a>
+    <!-- counter -->
+    <div class="count-area" data-diff="100">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="count-area-content">
+              <div class="count-icon"><i class="fa fa-home"></i></div>
+              <div class="count-digit">100</div>
+              <div class="count-title">Visitors</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="count-area-content">
+              <div class="count-icon"><i class="fa fa-graduation-cap"></i></div>
+              <div class="count-digit count-plus">10</div>
+              <div class="count-title">Subjects</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="count-area-content">
+              <div class="count-icon"><i class="fa fa-user"></i></div>
+              <div class="count-digit">4</div>
+              <div class="count-title">Contributors</div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="count-area-content">
+              <div class="count-icon"><i class="fa fa-book"></i></div>
+              <div class="count-digit">90</div>
+              <div class="count-title">Topics</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/commpyq.pdf"  target="_blank">Communication Skills
-      </a>
+    <!-- important ques -->
+    <h2 id="pyq" class="text-center display-2 py-5 green fw-bold space-area">
+      IMPORTANT PYQS
+    </h2>
+    <div class="row justify-content-center">
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/cnpyq.pdf"
+          target="_blank"
+          >Computer Networks
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/coapyq.pdf"
+          target="_blank"
+          >Computer Organization and Architecture
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/commpyq.pdf"
+          target="_blank"
+          >Communication Skills
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/dsapyq.pdf"
+          target="_blank"
+          >DSA using C
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/javapyq.pdf"
+          target="_blank"
+          >Java Programming
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/madpyq.pdf"
+          target="_blank"
+          >Mobile Application Development
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/OSpyq.pdf"
+          target="_blank"
+          >Operating System
+        </a>
+      </div>
+      <div
+        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
+      >
+        <img src="./assets/queslogo.png" height="70rem" />
+        <a
+          class="subname align-self-center px-3 lead fw-bold green"
+          href="../pyq/pythonpyq.pdf"
+          target="_blank"
+          >Python
+        </a>
+      </div>
     </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/dsapyq.pdf"  target="_blank">DSA using C
-      </a>
+    <!-- trust partners -->
+    <h2 class="text-center display-2 py-5 green fw-bold space-area">
+      CREDIBLE WEBSITES
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-md-1 col-3">
+        <a href="https://www.geeksforgeeks.org">
+          <img
+            src="./assets/gfg4.png"
+            alt="Avatar"
+            class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px"
+          />
+        </a>
+      </div>
+      <div class="col-md-1 col-3">
+        <a href="https://www.w3schools.com/">
+          <img
+            src="./assets/W3.jpg"
+            alt="Avatar"
+            class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px"
+          />
+        </a>
+      </div>
+      <div class="col-md-1 col-3">
+        <a href="https://www.programiz.com/">
+          <img
+            src="./assets/prog.png"
+            alt="Avatar"
+            class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px"
+          />
+        </a>
+      </div>
+      <div class="col-md-1 col-3">
+        <a href="https://www.tutorialspoint.com/index.htm">
+          <img
+            src="./assets/tt.png"
+            alt="Avatar"
+            class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px"
+          />
+        </a>
+      </div>
     </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/javapyq.pdf"  target="_blank">Java Programming
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/madpyq.pdf"  target="_blank">Mobile Application Development
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/OSpyq.pdf"  target="_blank">Operating System
-      </a>
-    </div>
-    <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
-      <img src="./assets/queslogo.png" height="70rem">
-      <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/pythonpyq.pdf" target="_blank">Python
-      </a>
-    </div>
-  </div>
-  <!-- trust partners -->
-  <h2 class="text-center display-2 py-5 green fw-bold space-area">CREDIBLE WEBSITES</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-1 col-3">
-      <a href="https://www.geeksforgeeks.org">
-      <img src="./assets/gfg4.png" alt="Avatar" class="img-fluid logoimg" style="width:100px;height:100px;border-radius: 130px;">
-    </a>
-    </div>
-    <div class="col-md-1 col-3">
-      <a href="https://www.w3schools.com/">
-      <img src="./assets/W3.jpg"  alt="Avatar" class="img-fluid logoimg" style="width:100px;height:100px;border-radius: 130px;">
-    </a>
-    </div>
-    <div class="col-md-1 col-3">
-      <a href="https://www.programiz.com/">
-      <img src="./assets/prog.png"  alt="Avatar" class="img-fluid logoimg" style="width:100px;height:100px;border-radius: 130px;">
-    </a>
-    </div>
-    <div class="col-md-1 col-3">
-      <a href="https://www.tutorialspoint.com/index.htm">
-      <img src="./assets/tt.png"  alt="Avatar" class="img-fluid logoimg" style="width:100px;height:100px;border-radius: 130px;">
-    </a>
-    </div>
-  </div>
-  <br><br>
+    <br /><br />
     <!-- Contact Us -->
-   <section id="cont" class="Contact">
+    <section id="cont" class="Contact">
       <div class="containerr">
         <div class="contactInfo">
           <div>
             <h2>Contact Info</h2>
             <ul class="info">
               <li>
-                <span><img src="assets/location.png" alt=""></span>
+                <span><img src="assets/location.png" alt="" /></span>
                 <span>
-                  Dadri, Greater Noida, <br>
-                  Uttar Pradesh, 201306 
+                  Dadri, Greater Noida, <br />
+                  Uttar Pradesh, 201306
                 </span>
               </li>
               <li>
-                <span><img src="assets/mail.png" alt=""></span>
+                <span><img src="assets/mail.png" alt="" /></span>
                 <span>Info.kwiknotes@gmail.com</span>
               </li>
               <li>
-                <span><img src="assets/call.png" alt=""></span>
+                <span><img src="assets/call.png" alt="" /></span>
                 <span>+91 9319133129</span>
               </li>
             </ul>
           </div>
           <ul class="sci">
-            <li><a href="https://www.facebook.com/profile.php?id=61551794133800"><img src="assets/1.png" alt=""></a></li>
-            <li><a href="https://twitter.com/KwikNotes"><img src="assets/2.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/kwiknotes.in/"><img src="assets/3.png" alt=""></a></li>
-            <li><a href="https://t.me/kwikNotes"><img src="assets/4.png" alt=""></a></li>
-            <li><a href="https://www.linkedin.com/company/100681180"><img src="assets/5.png" alt=""></a></li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=61551794133800"
+                ><img src="assets/1.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/KwikNotes"
+                ><img src="assets/2.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/kwiknotes.in/"
+                ><img src="assets/3.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://t.me/kwikNotes"
+                ><img src="assets/4.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/100681180"
+                ><img src="assets/5.png" alt=""
+              /></a>
+            </li>
           </ul>
         </div>
         <div class="contactForm">
           <h2>Send a Message</h2>
           <div class="formBox">
             <div class="inputBox w50">
-              <input type="text" required id="firstname">
+              <input type="text" required id="firstname" />
               <span>First Name</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" required id="lastname">
+              <input type="text" required id="lastname" />
               <span>Last Name</span>
             </div>
             <div class="inputBox w50">
-              <input type="email" required id="email">
+              <input type="email" required id="email" />
               <span>Email Address</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" required id="number">
+              <input type="text" required id="number" />
               <span>Mobile Number</span>
             </div>
             <div class="inputBox w100">
@@ -339,88 +592,136 @@
               <span>Write your Message here....</span>
             </div>
             <div class="inputBox w100">
-              <input type="submit" onclick="sendMail()" value="Send">
-
+              <input type="submit" onclick="sendMail()" value="Send" />
             </div>
           </div>
         </div>
       </div>
-   </section>
+    </section>
 
     <!-- Contact us ended -->
-
-
 
     <!-- footer -->
     <footer class="bggreen text-white pt-5 pb-4">
       <div class="container text-center text-md-left text-white">
-        <div class="row text-center text-md-left ">
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-white">About Us</h5>
-                <hr class="mb-4">
-                <p>KwikNotes offers a comprehensive collection of organized academic content, serving as your one-stop solution for all your educational needs. Explore our wealth of resources to enhance your learning experience.</p>
-            </div>
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                  <h5 class="text-uppercase mb-4 font-weight-bold text-white">Legal Info.</h5>
-                  <hr class="mb-4">
-                  <p>
-                      <a href="/Legal_Information/copy_right.html" class="text-white" style="text-decoration: none;">Copyright</a>
-                  </p>
-                  <p>
-                      <a href="/Legal_Information/privacy.html" class="text-white" style="text-decoration: none;">Privacy Policy</a>
-                  </p>
-                  <p>
-                      <a href="/Legal_Information/Terms&Cond.html"  class="text-white" style="text-decoration: none;">Terms and Conditions </a>
-                  </p>
-                  <p>
-                      <a href="#cont" class="text-white" style="text-decoration: none;">Help</a>
-                  </p>
-                
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h5 class="text-uppercase mb-4 font-weight-bold text-white">References</h5>
-                <hr class="mb-4">
-                <p>
-                    <a href="https://www.geeksforgeeks.org/"  target="_blank" class="text-white" style="text-decoration: none;">GFG</a>
-                </p>
-                <p>
-                    <a href="https://www.w3schools.com/" target="_blank" class="text-white" style="text-decoration: none;">w3schools</a>
-                </p>
-                <p>
-                    <a href="https://www.tutorialspoint.com/" target="_blank" class="text-white" style="text-decoration: none;">tutorialspoint</a>
-                </p>
-                <p>
-                    <a href="https://chat.openai.com/" target="_blank" class="text-white" style="text-decoration: none;">ChatGpt</a>
-                </p>
-              
-            </div>
-
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-              <h5 class="text-uppercase mb-4 font-weight-bold text-white">Contact</h5>
-              <hr class="mb-4">
-              <div class="d-flex align-items-center">
-                  <div class="mr-3"><i class="fas fa-home"></i></div>
-                  <div> &nbsp;&nbsp;Dadri, Greater Noida, Uttar Pradesh</div>
-              </div>
-              <div class="d-flex align-items-center mt-3">
-                  <div class="mr-3"><i class="fas fa-envelope"></i></div>
-                  <div>&nbsp;&nbsp;Info.kwiknotes@gmail.com</div>
-              </div>
-              <div class="d-flex align-items-center mt-3">
-                  <div class="mr-3"><i class="fas fa-phone"></i></div>
-                  <div>&nbsp;&nbsp;+91 9319133129</div>
-              </div>
-              <div class="d-flex align-items-center mt-3">
-                  <div class="mr-3"><i class="fas fa-print"></i></div>
-                  <div>&nbsp;&nbsp;+012 567243XXX</div>
-              </div>
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">
+              About Us
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              KwikNotes offers a comprehensive collection of organized academic
+              content, serving as your one-stop solution for all your
+              educational needs. Explore our wealth of resources to enhance your
+              learning experience.
+            </p>
           </div>
-          
-          
-            <hr class="mb-4">
-            <!-- <div class="row d-flex justify-content-center">
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">
+              Legal Info.
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              <a
+                href="/Legal_Information/copy_right.html"
+                class="text-white"
+                style="text-decoration: none"
+                >Copyright</a
+              >
+            </p>
+            <p>
+              <a
+                href="/Legal_Information/privacy.html"
+                class="text-white"
+                style="text-decoration: none"
+                >Privacy Policy</a
+              >
+            </p>
+            <p>
+              <a
+                href="/Legal_Information/Terms&Cond.html"
+                class="text-white"
+                style="text-decoration: none"
+                >Terms and Conditions
+              </a>
+            </p>
+            <p>
+              <a href="#cont" class="text-white" style="text-decoration: none"
+                >Help</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">
+              References
+            </h5>
+            <hr class="mb-4" />
+            <p>
+              <a
+                href="https://www.geeksforgeeks.org/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >GFG</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.w3schools.com/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >w3schools</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.tutorialspoint.com/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >tutorialspoint</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://chat.openai.com/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >ChatGpt</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-white">
+              Contact
+            </h5>
+            <hr class="mb-4" />
+            <div class="d-flex align-items-center">
+              <div class="mr-3"><i class="fas fa-home"></i></div>
+              <div>&nbsp;&nbsp;Dadri, Greater Noida, Uttar Pradesh</div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <div class="mr-3"><i class="fas fa-envelope"></i></div>
+              <div>&nbsp;&nbsp;Info.kwiknotes@gmail.com</div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <div class="mr-3"><i class="fas fa-phone"></i></div>
+              <div>&nbsp;&nbsp;+91 9319133129</div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <div class="mr-3"><i class="fas fa-print"></i></div>
+              <div>&nbsp;&nbsp;+012 567243XXX</div>
+            </div>
+          </div>
+
+          <hr class="mb-4" />
+          <!-- <div class="row d-flex justify-content-center">
                 <div>
                     <p>
                         Copyright 2023 All Rights Reserved By:
@@ -432,53 +733,80 @@
                 </div>
             </div> -->
 
-            <div id="copyright" align="center">&copy; 2023 - 2023 https://www.kwiknotes.in </div>
-            <script>
-            (function(){
+          <div id="copyright" align="center">
+            &copy; 2023 - 2023 https://www.kwiknotes.in
+          </div>
+          <script>
+            (function () {
               let cpr = document.getElementById("copyright");
-              cpr.innerHTML = "&copy; 2023 - "+new Date().getFullYear()+" https://www.kwiknotes.in - All Rights Reserved.";
+              cpr.innerHTML =
+                "&copy; 2023 - " +
+                new Date().getFullYear() +
+                " https://www.kwiknotes.in - All Rights Reserved.";
             })();
-            </script>
+          </script>
 
-
-
-            <div class="row">
-              <div class="col-md-12 text-center">
-                  <ul class="list-unstyled list-inline">
-                      <li class="list-inline-item">
-                          <a href="https://www.facebook.com/profile.php?id=61551794133800" class="text-white bg-transparent socialicon"><i class="fab fa-facebook"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="https://twitter.com/KwikNotes" class="text-white bg-transparent socialicon"><i class="fab fa-twitter"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="https://whatsapp.com/channel/0029Va5jjvT6LwHps6kQQs2K" class="text-white bg-transparent socialicon"><i class="fab fa-whatsapp"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="https://www.instagram.com/kwiknotes.in/" class="text-white bg-transparent socialicon"><i class="fab fa-instagram"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="https://www.linkedin.com/company/100681180" class="text-white bg-transparent socialicon"><i class="fab fa-linkedin-in"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a href="https://t.me/kwikNotes" class="text-white bg-transparent socialicon"><i class="fab fa-telegram"></i></a>
-                    </li>
-                  </ul>
-              </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61551794133800"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://twitter.com/KwikNotes"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://whatsapp.com/channel/0029Va5jjvT6LwHps6kQQs2K"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.instagram.com/kwiknotes.in/"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/company/100681180"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://t.me/kwikNotes"
+                    class="text-white bg-transparent socialicon"
+                    ><i class="fab fa-telegram"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
-          
-          
+          </div>
         </div>
-     </div>
-   </footer>
-   <!-- Footer Ended -->
-   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      </div>
+    </footer>
+    <!-- Footer Ended -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script src="js/suggestions.js"></script>
     <script type="module" src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="js/counter.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
@@ -492,56 +820,92 @@
           compareTop = partial === true ? _bottom : _top,
           compareBottom = partial === true ? _top : _bottom;
 
-        return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
+        return (
+          compareBottom <= viewBottom &&
+          compareTop >= viewTop &&
+          $t.is(":visible")
+        );
       }
 
       $(window).scroll(function () {
-        if (visible($('.count-digit').eq(0))) {
-          if ($('.count-digit').hasClass('counter-loaded')) return;
-          $('.count-digit').addClass('counter-loaded');
+        if (visible($(".count-digit").eq(0))) {
+          if ($(".count-digit").hasClass("counter-loaded")) return;
+          $(".count-digit").addClass("counter-loaded");
 
-          $('.count-digit').each(function () {
+          $(".count-digit").each(function () {
             var $this = $(this);
-            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-              duration: 1000,
-              easing: 'swing',
-              step: function () {
-                $this.text(Math.ceil(this.Counter));
+            jQuery({ Counter: 0 }).animate(
+              { Counter: $this.text() },
+              {
+                duration: 1000,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.ceil(this.Counter));
+                },
               }
-            });
+            );
           });
         }
       });
       function scrollToElement(id) {
-            var target = $("#" + id);
-            var offset = target.offset().top - ($(window).height() - target.outerHeight()) / 2;
-            $('html, body').animate({
-                scrollTop: offset
-            }, 100);
-        }
+        var target = $("#" + id);
+        var offset =
+          target.offset().top - ($(window).height() - target.outerHeight()) / 2;
+        $("html, body").animate(
+          {
+            scrollTop: offset,
+          },
+          100
+        );
+      }
     </script>
     <script type="text/javascript">
       let mybutton = document.getElementById("myBtn");
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
     </script>
+    <!-- trynav -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
     <script src="js/Authentication.js"></script>
-    <script>(function(w, d) { w.CollectId = "653e3c4120465d1aa0f188d2"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
-    </body>
-
-
+    <script>
+      (function (w, d) {
+        w.CollectId = "653e3c4120465d1aa0f188d2";
+        var h = d.head || d.getElementsByTagName("head")[0];
+        var s = d.createElement("script");
+        s.setAttribute("type", "text/javascript");
+        s.async = true;
+        s.setAttribute("src", "https://collectcdn.com/launcher.js");
+        h.appendChild(s);
+      })(window, document);
+    </script>
+  </body>
 </html>
