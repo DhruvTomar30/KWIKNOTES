@@ -1,164 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>KWIKNOTES</title>
+</head>
+
+<body>
+
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <title>KWIKNOTES</title>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
   </head>
 
-  <body>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light sticky-md-top sticky-lg-top sticky-sm-top sticky-top bg-white" >
-    <div class="container-fluid">
-      <img src="./assets\navlogo.png" height="60px">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" onclick="scrollToElement('about')">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Notes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="new">
-                <li><a class="dropdown-item" href="../pages/cnpage.html">Computer Networks</a></li>
-                <li><a class="dropdown-item" href="../pages/cgpage.html">Computer Graphics</a></li>
-                <li><a class="dropdown-item" href="../pages/dbmspage.html">DBMS</a></li>
-                <li><a class="dropdown-item" href="../pages/itpage.html">Information Technology</a></li>
+  <body id="nn">
+    <header class="header bg-white">
+      <div class="container">
+        <div class="header-main">
+          <div class="logo">
+            <img src="./assets\navlogo.png" class="" height="60px" />
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay">
+          </div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <i class="fa-solid fa-xmark "></i>
             </div>
-            <div class="new">
-                <li><a class="dropdown-item" href="../pages/spmpage.html" >SPM</a></li>
-              <li><a class="dropdown-item" href="../pages/pypage.html" >Python</a></li>
-              <li><a class="dropdown-item" href="../pages/webpage.html">Web Development</a></li>
-              <li><a class="dropdown-item" href="../pages/cloudpage.html">Cloud Computing</a></li>
-              <li><a class="dropdown-item" href="../pages/aipage.html">Artificial Intelligence</a></li>
-            </div>
+            <ul class="menu">
+              <li class="menu-item lead">
+                <a href="#nn">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#ab">About</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu ">Notes<i class="fas fa-caret-down mx-2"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="../pages/cgpage.html">Computer Graphics</a></li>
+                  <li class="menu-item"><a href="../pages/cnpage.html">Computer Network</a></li>
+                  <li class="menu-item"><a href="../pages/dbmspage.html">DBMS</a></li>
+                  <li class="menu-item"><a href="../pages/itpage.html">IT</a></li>
+                  <li class="menu-item"><a href="../pages/spmpage.html">SPM</a></li>
+                  <li class="menu-item"><a href="../pages/pypage.html">Python</a></li>
+                  <li class="menu-item"><a href="../pages/webpage.html">Web Development</a></li>
+                  <li class="menu-item"><a href="../pages/cloudpage.html">Cloud Computing</a></li>
+                  <li class="menu-item"><a href="../pages/aipage.html">AI</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">PYQ's<i class="fas fa-caret-down mx-2"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="../pyq/cnpyq.pdf" target="_blank">Computer Network</a></li>
+                  <li class="menu-item"><a href="../pyq/coapyq.pdfl" target="_blank">COA</a></li>
+                  <li class="menu-item"><a href="../pyq/commpyq.pdf" target="_blank">Communication Skills</a></li>
+                  <li class="menu-item"><a href="../pyq/dsapyq.pdf" target="_blank">Dsa using C</a></li>
+                  <li class="menu-item"><a href="../pyq/javapyq.pdf" target="_blank">Java Programming</a></li>
+                  <li class="menu-item"><a href="../pyq/madpyq.pdf" target="_blank">Mobile App Development</a></li>
+                  <li class="menu-item"><a href="../pyq/OSpyq.pdfl" target="_blank">Operating System</a></li>
+                  <li class="menu-item"><a href="../pyq/pythonpyq.pdf" target="_blank">Python</a></li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu">Practical Files<i class="fas fa-caret-down mx-2"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item"><a href="../practicalfile/ANDROIDPR.pdf" target="_blank">Android Development</a></li>
+                  <li class="menu-item"><a href="../practicalfile/CNPR.pdf" target="_blank">Computer Networks</a></li>
+                  <li class="menu-item"><a href="../practicalfile/DSPR.pdf" target="_blank">Data Structure Using C</a></li>
+                  <li class="menu-item"><a href="../practicalfile/OSPR.pdf" target="_blank">Operating System</a></li>
+                  <li class="menu-item"><a href="../practicalfile/PYthonpr.pdf" target="_blank">Python</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="#cont">Contact Us</a>
+              </li>
+              
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#pyq" onclick="scrollToElement('pyq')">PYQ's</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Projects</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#practical" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Practical Files
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="new">
-              <li><a class="dropdown-item" href="../practicalfile/OSPR.pdf" target="_blank">Operating System</a></li>
-              <li><a class="dropdown-item" href="../practicalfile/ANDROIDPR.pdf" target="_blank">Android Development</a></li>
-              <li><a class="dropdown-item" href="../practicalfile/PYTHONPR.pdf" target="_blank">Python</a></li>
-            </div>
-            <div class="new">
-              <li><a class="dropdown-item" href="../practicalfile/DSPR.pdf" target="_blank">Data Structures using C++</a></li>
-              <li><a class="dropdown-item" href="../practicalfile/CNPR.pdf" target="_blank">Computer Networks</a></li>
-            </div>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cont">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>  -->
-    <!-- try nav -->
-    <head>
-      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
-    </head>
-    
-    <body>
-      <header>
-        <div class="container">
-          <input type="checkbox" name="check" id="check">
-          <div class="logo-container">
-            <img src="./assets\whitenavlogo.png" height="60px">
-            <!-- <h3 class="logo">Kwik<span>Notes</span></h3> -->
-          </div>
-    
-          <div class="nav-btn">
-            <div class="nav-links">
-              <ul>
-                <li class="nav-link" style="--i: .6s">
-                  <a href="#">Home</a>
-                </li>
-                <li class="nav-link" style="--i: .85s">
-                  <a href="#">Menu<i class="fas fa-caret-down"></i></a>
-                  <div class="dropdown">
-                    <ul>
-                      <li class="dropdown-link">
-                        <a href="#">Link 1</a>
-                      </li>
-                      <li class="dropdown-link">
-                        <a href="#">Link 2</a>
-                      </li>
-                      <li class="dropdown-link">
-                        <a href="#">Link 4</a>
-                      </li>
-                      <div class="arrow"></div>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-link" style="--i: 1.1s">
-                  <a href="#">Services<i class="fas fa-caret-down"></i></a>
-                  <div class="dropdown">
-                    <ul>
-                      <li class="dropdown-link">
-                        <a href="#">Link 1</a>
-                      </li>
-                      <li class="dropdown-link">
-                        <a href="#">Link 2</a>
-                      </li>
-                      <li class="dropdown-link">
-                        <a href="#">Link 4</a>
-                      </li>
-                      <div class="arrow"></div>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-link" style="--i: 1.35s">
-                  <a href="#">About</a>
-                </li>
-              </ul>
-            </div>
-            <div class="log-sign" style="--i: 1.8s">
-              <a href="#" class="btn transparent">Log in</a>
-              <a href="#" class="btn solid">Sign up</a>
-            </div>
-          </div>
-    
-          <div class="hamburger-menu-container">
-            <div class="hamburger-menu">
-              <div></div>
-            </div>
-          </div>
+          </nav>
+          <script src="js/navjs.js">
+          </script>
+          <!-- navigation menu end -->
         </div>
-      </header>
-      <main>
-      </main>
-    </body>
+      </div>
+    </header>
     <br /><br /><br />
     <!-- intro -->
     <div class="intro mx-0" id="home">
@@ -191,17 +126,11 @@
           <br />
           <div class="col-md-1"></div>
           <div class="col-md-4">
-            <img
-              src="./assets\navlogo.png"
-              class="mx-auto logostar"
-              height="250px"
-            /><br />
-            <span
-              class="text-center bggreen text-white align-content-center p-1 mx-auto logostar"
-              >CHALLENGING THE SCATTERED HUNT</span
-            ><br /><br />
+            <img src="./assets\navlogo.png" class="mx-auto logostar" height="250px" /><br />
+            <span class="text-center bggreen text-white align-content-center p-1 mx-auto logostar">CHALLENGING THE
+              SCATTERED HUNT</span><br /><br />
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 align-middle" id="ab">
             <p class="display-4 abhead fw-bold green p-2">ABOUT KWIKNOTES</p>
             <p class="lead p-2">
               Welcome to KwikNotes, your trusted companion on your academic
@@ -229,113 +158,56 @@
       </h2>
       <!-- 1 -->
       <div class="row justify-content-center" id="importantNotesCards">
-        <div
-          id="cg"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss h-100"
-        >
+        <div id="cg" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss h-100">
           <img src="./assets/cg.png" height="70rem" />
-          <a
-            class="subname px-3 lead fw-bold green"
-            href="../pages/cgpage.html"
-            data-card="cg"
-            >Computer Graphics</a
-          >
+          <a class="subname px-3 lead fw-bold green" href="../pages/cgpage.html" data-card="cg">Computer Graphics</a>
         </div>
 
-        <div
-          id="cn"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="cn" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/cn.jpg" height="70rem" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/cnpage.html"
-            data-card="cn"
-            >Computer Networks
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/cnpage.html"
+            data-card="cn">Computer Networks
           </a>
         </div>
-        <div
-          id="dbms"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="dbms" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/dbms.jpg" height="70rem" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/dbmspage.html"
-            data-card="dbms"
-            >DBMS</a
-          >
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/dbmspage.html"
+            data-card="dbms">DBMS</a>
         </div>
-        <div
-          id="it"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="it" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/infotech.avif" height="70rem" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/itpage.html"
-            data-card="it"
-            >Information Technology
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/itpage.html"
+            data-card="it">Information Technology
           </a>
         </div>
-        <div
-          id="spm"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="spm" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/spmlogo.jpeg" height="70rem" width="100px" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/spmpage.html"
-            data-card="spm"
-            >SOFTWARE PROJECT MANAGEMENT
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/spmpage.html"
+            data-card="spm">SOFTWARE PROJECT MANAGEMENT
           </a>
         </div>
-        <div
-          id="py"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="py" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/py.png" height="70rem" width="100px" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/pypage.html"
-            data-card="python"
-            >Python
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/pypage.html"
+            data-card="python">Python
           </a>
         </div>
-        <div
-          id="web"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/webd.jpg" height="70rem" width="100px" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/webpage.html"
-            data-card="webD"
-            >Web Development
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/webpage.html" data-card="webD">Web
+            Development
           </a>
         </div>
-        <div
-          id="web"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/cloud.png" height="70rem" width="100px" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/cloudpage.html"
-            data-card="cloud"
-            >Cloud Computing
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/cloudpage.html"
+            data-card="cloud">Cloud Computing
           </a>
         </div>
-        <div
-          id="web"
-          class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-        >
+        <div id="web" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
           <img src="./assets/ai.jpg" height="70rem" width="100px" />
-          <a
-            class="subname align-self-center px-3 lead fw-bold green"
-            href="../pages/aipage.html"
-            data-card="ai"
-            >Artificial Intelligence
+          <a class="subname align-self-center px-3 lead fw-bold green" href="../pages/aipage.html"
+            data-card="ai">Artificial Intelligence
           </a>
         </div>
       </div>
@@ -380,92 +252,57 @@
       IMPORTANT PYQS
     </h2>
     <div class="row justify-content-center">
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/cnpyq.pdf"
-          target="_blank"
-          >Computer Networks
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/cnpyq.pdf" target="_blank">Computer
+          Networks
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
+        <div class="row">
+          <div class="col-2">
+          <img src="./assets/queslogo.png" height="70rem" /></div>
+
+          <div class="col-10">
+        <a class="subname align-self-center px-3 pt-1 lead fw-bold green" href="../pyq/coapyq.pdf" target="_blank">Computer
+          Organization and Architecture
+        </a></div>
+        </div>
+        
+      </div>
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/coapyq.pdf"
-          target="_blank"
-          >Computer Organization and Architecture
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/commpyq.pdf"
+          target="_blank">Communication Skills
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/commpyq.pdf"
-          target="_blank"
-          >Communication Skills
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/dsapyq.pdf" target="_blank">DSA using
+          C
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/dsapyq.pdf"
-          target="_blank"
-          >DSA using C
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/javapyq.pdf" target="_blank">Java
+          Programming
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/javapyq.pdf"
-          target="_blank"
-          >Java Programming
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/madpyq.pdf" target="_blank">Mobile
+          Application Development
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/madpyq.pdf"
-          target="_blank"
-          >Mobile Application Development
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/OSpyq.pdf" target="_blank">Operating
+          System
         </a>
       </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
+      <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
         <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/OSpyq.pdf"
-          target="_blank"
-          >Operating System
-        </a>
-      </div>
-      <div
-        class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex"
-      >
-        <img src="./assets/queslogo.png" height="70rem" />
-        <a
-          class="subname align-self-center px-3 lead fw-bold green"
-          href="../pyq/pythonpyq.pdf"
-          target="_blank"
-          >Python
+        <a class="subname align-self-center px-3 lead fw-bold green" href="../pyq/pythonpyq.pdf" target="_blank">Python
         </a>
       </div>
     </div>
@@ -476,42 +313,26 @@
     <div class="row justify-content-center">
       <div class="col-md-1 col-3">
         <a href="https://www.geeksforgeeks.org">
-          <img
-            src="./assets/gfg4.png"
-            alt="Avatar"
-            class="img-fluid logoimg"
-            style="width: 100px; height: 100px; border-radius: 130px"
-          />
+          <img src="./assets/gfg4.png" alt="Avatar" class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px" />
         </a>
       </div>
       <div class="col-md-1 col-3">
         <a href="https://www.w3schools.com/">
-          <img
-            src="./assets/W3.jpg"
-            alt="Avatar"
-            class="img-fluid logoimg"
-            style="width: 100px; height: 100px; border-radius: 130px"
-          />
+          <img src="./assets/W3.jpg" alt="Avatar" class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px" />
         </a>
       </div>
       <div class="col-md-1 col-3">
         <a href="https://www.programiz.com/">
-          <img
-            src="./assets/prog.png"
-            alt="Avatar"
-            class="img-fluid logoimg"
-            style="width: 100px; height: 100px; border-radius: 130px"
-          />
+          <img src="./assets/prog.png" alt="Avatar" class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px" />
         </a>
       </div>
       <div class="col-md-1 col-3">
         <a href="https://www.tutorialspoint.com/index.htm">
-          <img
-            src="./assets/tt.png"
-            alt="Avatar"
-            class="img-fluid logoimg"
-            style="width: 100px; height: 100px; border-radius: 130px"
-          />
+          <img src="./assets/tt.png" alt="Avatar" class="img-fluid logoimg"
+            style="width: 100px; height: 100px; border-radius: 130px" />
         </a>
       </div>
     </div>
@@ -542,29 +363,19 @@
           </div>
           <ul class="sci">
             <li>
-              <a href="https://www.facebook.com/profile.php?id=61551794133800"
-                ><img src="assets/1.png" alt=""
-              /></a>
+              <a href="https://www.facebook.com/profile.php?id=61551794133800"><img src="assets/1.png" alt="" /></a>
             </li>
             <li>
-              <a href="https://twitter.com/KwikNotes"
-                ><img src="assets/2.png" alt=""
-              /></a>
+              <a href="https://twitter.com/KwikNotes"><img src="assets/2.png" alt="" /></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/kwiknotes.in/"
-                ><img src="assets/3.png" alt=""
-              /></a>
+              <a href="https://www.instagram.com/kwiknotes.in/"><img src="assets/3.png" alt="" /></a>
             </li>
             <li>
-              <a href="https://t.me/kwikNotes"
-                ><img src="assets/4.png" alt=""
-              /></a>
+              <a href="https://t.me/kwikNotes"><img src="assets/4.png" alt="" /></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/100681180"
-                ><img src="assets/5.png" alt=""
-              /></a>
+              <a href="https://www.linkedin.com/company/100681180"><img src="assets/5.png" alt="" /></a>
             </li>
           </ul>
         </div>
@@ -624,33 +435,20 @@
             </h5>
             <hr class="mb-4" />
             <p>
-              <a
-                href="/Legal_Information/copy_right.html"
-                class="text-white"
-                style="text-decoration: none"
-                >Copyright</a
-              >
+              <a href="/Legal_Information/copy_right.html" class="text-white"
+                style="text-decoration: none">Copyright</a>
             </p>
             <p>
-              <a
-                href="/Legal_Information/privacy.html"
-                class="text-white"
-                style="text-decoration: none"
-                >Privacy Policy</a
-              >
+              <a href="/Legal_Information/privacy.html" class="text-white" style="text-decoration: none">Privacy
+                Policy</a>
             </p>
             <p>
-              <a
-                href="/Legal_Information/Terms&Cond.html"
-                class="text-white"
-                style="text-decoration: none"
-                >Terms and Conditions
+              <a href="/Legal_Information/Terms&Cond.html" class="text-white" style="text-decoration: none">Terms and
+                Conditions
               </a>
             </p>
             <p>
-              <a href="#cont" class="text-white" style="text-decoration: none"
-                >Help</a
-              >
+              <a href="#cont" class="text-white" style="text-decoration: none">Help</a>
             </p>
           </div>
 
@@ -660,40 +458,20 @@
             </h5>
             <hr class="mb-4" />
             <p>
-              <a
-                href="https://www.geeksforgeeks.org/"
-                target="_blank"
-                class="text-white"
-                style="text-decoration: none"
-                >GFG</a
-              >
+              <a href="https://www.geeksforgeeks.org/" target="_blank" class="text-white"
+                style="text-decoration: none">GFG</a>
             </p>
             <p>
-              <a
-                href="https://www.w3schools.com/"
-                target="_blank"
-                class="text-white"
-                style="text-decoration: none"
-                >w3schools</a
-              >
+              <a href="https://www.w3schools.com/" target="_blank" class="text-white"
+                style="text-decoration: none">w3schools</a>
             </p>
             <p>
-              <a
-                href="https://www.tutorialspoint.com/"
-                target="_blank"
-                class="text-white"
-                style="text-decoration: none"
-                >tutorialspoint</a
-              >
+              <a href="https://www.tutorialspoint.com/" target="_blank" class="text-white"
+                style="text-decoration: none">tutorialspoint</a>
             </p>
             <p>
-              <a
-                href="https://chat.openai.com/"
-                target="_blank"
-                class="text-white"
-                style="text-decoration: none"
-                >ChatGpt</a
-              >
+              <a href="https://chat.openai.com/" target="_blank" class="text-white"
+                style="text-decoration: none">ChatGpt</a>
             </p>
           </div>
 
@@ -750,46 +528,28 @@
             <div class="col-md-12 text-center">
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61551794133800"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-facebook"></i
-                  ></a>
+                  <a href="https://www.facebook.com/profile.php?id=61551794133800"
+                    class="text-white bg-transparent socialicon"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://twitter.com/KwikNotes"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
+                  <a href="https://twitter.com/KwikNotes" class="text-white bg-transparent socialicon"><i
+                      class="fab fa-twitter"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://whatsapp.com/channel/0029Va5jjvT6LwHps6kQQs2K"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-whatsapp"></i
-                  ></a>
+                  <a href="https://whatsapp.com/channel/0029Va5jjvT6LwHps6kQQs2K"
+                    class="text-white bg-transparent socialicon"><i class="fab fa-whatsapp"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://www.instagram.com/kwiknotes.in/"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
+                  <a href="https://www.instagram.com/kwiknotes.in/" class="text-white bg-transparent socialicon"><i
+                      class="fab fa-instagram"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/company/100681180"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
+                  <a href="https://www.linkedin.com/company/100681180" class="text-white bg-transparent socialicon"><i
+                      class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li class="list-inline-item">
-                  <a
-                    href="https://t.me/kwikNotes"
-                    class="text-white bg-transparent socialicon"
-                    ><i class="fab fa-telegram"></i
-                  ></a>
+                  <a href="https://t.me/kwikNotes" class="text-white bg-transparent socialicon"><i
+                      class="fab fa-telegram"></i></a>
                 </li>
               </ul>
             </div>
@@ -802,11 +562,9 @@
 
     <script src="js/suggestions.js"></script>
     <script type="module" src="js/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="js/counter.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript">
@@ -908,4 +666,5 @@
       })(window, document);
     </script>
   </body>
+
 </html>
