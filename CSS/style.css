@@ -566,9 +566,11 @@ nav ul li ul li {
   content: '+';
 }
 .subname{
-  align-items: center;
-  justify-content: center;
   margin: auto;
+  width: 100%;
+  /* border: 3px solid green; */
+  align-self: center;
+  padding-top: 20px !important;
 }
 
 /* Contact us ended */
