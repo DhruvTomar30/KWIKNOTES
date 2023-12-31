@@ -33,12 +33,14 @@
     line-height: 60px;
     text-align: center;
     text-decoration: none;
-    color: rgba(0,163,136,255);
+    /* color: gray; */
+    color: #00a388;
   }
 
   .underline {
     height: 6px;
     background: rgba(0,163,136,255);
+    /* background: #000; */
     position: absolute;
     bottom: 0;
     width: 25%;
@@ -62,7 +64,7 @@
   }
   
   nav .item:nth-child(1):hover ~ .underline {
-    transform: translate(0, 0);
+    transform: translate(0, 40);
   }
   
   nav .item:nth-child(2):hover ~ .underline {
@@ -116,4 +118,12 @@
     nav .item:nth-child(4):hover ~ .underline {
       transform: translate(500%, 0);
   }
+  }
+  @media(max-width: 700px){
+    nav .item{
+      font-size: 15px;
+    }
+  }
+  .gray{
+    color: gray;
   }
