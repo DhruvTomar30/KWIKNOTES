@@ -3,20 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" href="CSS/style.css" />
+  <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
   <title>KWIKNOTES</title>
 </head>
 
-<body>
 
-  <head>
-    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
-  </head>
 
   <body id="nn">
     <header class="header bg-white">
@@ -31,7 +28,7 @@
           <div class="menu-overlay">
           </div>
           <!-- navigation menu start -->
-          <nav class="nav-menu">
+          <nav class="nav-menu" id="myTopnav">
             <div class="close-nav-menu">
               <i class="fa-solid fa-xmark rr0"></i>
             </div>
@@ -43,7 +40,7 @@
                 <a href="#ab">About</a>
               </li>
               <li class="menu-item menu-item-has-children">
-                <a href="#" data-toggle="sub-menu ">Notes<i class="fas fa-caret-down mx-2"></i>
+                <a href="#impnotes" data-toggle="sub-menu ">Notes<i class="fas fa-caret-down mx-2"></i>
                 </a>
                 <ul class="sub-menu submenu1">
                   <div class="column">
@@ -63,7 +60,7 @@
               </li>
               
               <li class="menu-item menu-item-has-children">
-                <a href="#" data-toggle="sub-menu">PYQ's<i class="fas fa-caret-down mx-2"></i>
+                <a href="#pyq" data-toggle="sub-menu">PYQ's<i class="fas fa-caret-down mx-2"></i>
                 </a>
                 <ul class="sub-menu">
                   <div class="column">
@@ -81,7 +78,7 @@
                 </ul>
               </li>
               <li class="menu-item menu-item-has-children">
-                <a href="#" data-toggle="sub-menu">Practical Files<i class="fas fa-caret-down mx-2"></i>
+                <a href="" data-toggle="sub-menu">Practical Files<i class="fas fa-caret-down mx-2"></i>
                 </a>
                 <ul class="sub-menu">
                   <div class="column">
@@ -198,7 +195,7 @@
             <div class="col-2">
           <img src="./assets/dbms.jpg" height="70rem" /></div>
           <div class="col-8">
-          <a class="subname d-flex align-items-center lead fw-bold green" href="../pages/dbmspage.html"
+          <a class="subname d-flex align-items-center lead fw-bold green px-5" href="../pages/dbmspage.html"
             data-card="dbms">DBMS</a>
         </div></div></div>
         <div id="it" class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
@@ -226,7 +223,7 @@
           <img src="./assets/py.png" height="70rem" width="100px" />
           </div>
           <div class="col-8">
-          <a class="subname d-flex align-items-center lead fw-bold green" href="../pages/pypage.html"
+          <a class="subname d-flex align-items-center lead fw-bold green px-5" href="../pages/pypage.html"
             data-card="python">Python
           </a>
         </div></div></div>
@@ -339,8 +336,8 @@
           <div class="col-2">
         <img src="./assets/queslogo.png" height="70rem" />
         </div>
-        <div class="col-8">
-        <a class="subname d-flex align-items-center lead fw-bold green" href="../pyq/dsapyq.pdf" target="_blank">DSA using C
+        <div class="col-10">
+        <a class="subname d-flex align-items-center lead fw-bold green px-5" href="../pyq/dsapyq.pdf" target="_blank">DSA using C
         </a>
       </div></div></div>
       <div class="col-md-4 col-sm-6 p-2 lead mx-3 my-4 notecard border-0 cardss flex">
@@ -367,8 +364,8 @@
           <div class="col-2">
         <img src="./assets/queslogo.png" height="70rem" />
         </div>
-        <div class="col-8">
-        <a class="subname d-flex align-items-center lead fw-bold green" href="../pyq/OSpyq.pdf" target="_blank">Operating
+        <div class="col-10">
+        <a class="subname d-flex align-items-center lead fw-bold green px-3" href="../pyq/OSpyq.pdf" target="_blank">Operating
           System
         </a>
       </div></div></div>
@@ -378,7 +375,7 @@
         <img src="./assets/queslogo.png" height="70rem" />
         </div>
         <div class="col-8">
-        <a class="subname d-flex align-items-center lead fw-bold green" href="../pyq/pythonpyq.pdf" target="_blank">Python
+        <a class="subname d-flex align-items-center lead fw-bold green px-5 href="../pyq/pythonpyq.pdf" target="_blank">Python
         </a>
         </div></div>
       </div>
@@ -721,7 +718,7 @@
     <!-- trynav -->
     <script>
       function myFunction() {
-        var x = document.getElementById("myTopnav");
+        var x = document.querySelector(".topnav"); // Assuming you want to select an element with class "topnav"
         if (x.className === "topnav") {
           x.className += " responsive";
         } else {
